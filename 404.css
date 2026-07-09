@@ -1,0 +1,158 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+overflow:hidden;
+height:100vh;
+background:url("https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1600")
+center/cover;
+}
+
+.error-page{
+width:100%;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+background:rgba(0,0,0,0.6);
+}
+
+.content{
+z-index:10;
+color:#fff;
+}
+
+.error-code{
+font-size:180px;
+font-weight:900;
+color:#ffcc00;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:20px;
+animation:glow 2s infinite;
+}
+
+.logo-circle{
+width:150px;
+height:150px;
+border:8px solid #ffcc00;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+.logo-circle img{
+width:90px;
+}
+
+h2{
+font-size:40px;
+margin-top:10px;
+}
+
+p{
+margin:20px 0;
+font-size:18px;
+}
+
+.home-btn{
+padding:15px 35px;
+background:#ffcc00;
+color:#000;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.4s;
+}
+
+.home-btn:hover{
+transform:scale(1.1);
+}
+
+.road{
+position:absolute;
+bottom:0;
+width:100%;
+height:120px;
+background:#222;
+}
+
+.road::before{
+content:"";
+position:absolute;
+top:50%;
+left:0;
+width:100%;
+height:8px;
+background:repeating-linear-gradient(
+90deg,
+#fff 0,
+#fff 50px,
+transparent 50px,
+transparent 100px
+);
+animation:roadMove 1s linear infinite;
+}
+
+.taxi{
+position:absolute;
+bottom:40px;
+width:250px;
+right:-300px;
+animation:taxiMove 10s linear infinite;
+}
+
+@keyframes taxiMove{
+0%{
+right:-300px;
+}
+100%{
+right:120%;
+}
+}
+
+@keyframes roadMove{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-100px);
+}
+}
+
+@keyframes glow{
+0%,100%{
+text-shadow:0 0 20px #ffcc00;
+}
+50%{
+text-shadow:0 0 50px #ffcc00;
+}
+}
+
+.rain{
+position:absolute;
+width:100%;
+height:100%;
+background-image:
+linear-gradient(transparent,rgba(255,255,255,.5));
+background-size:2px 20px;
+animation:rainFall .3s linear infinite;
+}
+
+@keyframes rainFall{
+0%{
+background-position:0 0;
+}
+100%{
+background-position:-20px 20px;
+}
+}
