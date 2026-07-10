@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stackly Ride Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="sidebar">
+<div class="logo">
+    <a href="index.html">
+        <img src="image-12.webp" alt="Stackly Ride Logo">
+        <span>Stackly Ride</span>
+    </a>
+</div>
+    <ul>
+        <li><a href="#dashboard"><i class="fas fa-home"></i> Dashboard</a></li>
+
+        <li><a href="#rides"><i class="fas fa-car"></i> Rides</a></li>
+
+        <li><a href="#drivers"><i class="fas fa-user"></i> Drivers</a></li>
+
+        <li><a href="#bookings"><i class="fas fa-calendar"></i> Bookings</a></li>
+
+        <li><a href="#earnings"><i class="fas fa-wallet"></i> Earnings</a></li>
+
+        <li><a href="index.html"><i class="fas fa-arrow-left"></i> Home</a></li>
+    </ul>
+
+    <button id="logoutBtn">
+        <i class="fas fa-sign-out-alt"></i>
+        Logout
+    </button>
+
+</div>
+
+<div class="main-content">
+
+    <header>
+        <h1>Welcome to Stackly Ride Dashboard</h1>
+    </header>
+
+    <section id="dashboard" class="cards">
+
+        <div class="card">
+            <i class="fas fa-taxi"></i>
+            <h2>1250</h2>
+            <p>Total Rides</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-user"></i>
+            <h2>320</h2>
+            <p>Drivers</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-wallet"></i>
+            <h2>₹2.5L</h2>
+            <p>Earnings</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-star"></i>
+            <h2>4.9</h2>
+            <p>Rating</p>
+        </div>
+
+    </section>
+
+    <section id="rides" class="gallery">
+
+        <h2>Our Fleet</h2>
+
+        <div class="gallery-grid">
+
+            <img src="image-9.webp">
+
+            <img src="image-10.webp">
+
+            <img src="image-11.webp">
+
+        </div>
+
+    </section>
+    <section id="drivers" class="drivers">
+
+        <h2>Top Drivers</h2>
+
+        <div class="driver-cards">
+
+            <div class="driver-card">
+            
+                <h3>Rahul</h3>
+                <p>Rating: 4.8</p>
+            </div>
+
+            <div class="driver-card">
+    
+                <h3>Priya</h3>
+                <p>Rating: 4.9</p>
+            </div>
+
+            <div class="driver-card">
+            
+                <h3>Amit</h3>
+                <p>Rating: 4.7</p>
+            </div>
+
+        </div>
+        </section>
+    
+    
+
+    <section id="bookings" class="table-section">
+
+        <h2>Recent Bookings</h2>
+
+        <table>
+
+            <tr>
+                <th>Name</th>
+                <th>Pickup</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Rahul</td>
+                <td>Hyderabad</td>
+                <td>Completed</td>
+            </tr>
+
+            <tr>
+                <td>Priya</td>
+                <td>Secunderabad</td>
+                <td>Active</td>
+            </tr>
+
+        </table>
+
+    </section>
+    <!-- Earnings Section -->
+
+<section id="earnings" class="cards">
+
+    <div class="card">
+        <i class="fas fa-money-bill-wave"></i>
+        <h2>₹50,000</h2>
+        <p>Today's Earnings</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-chart-line"></i>
+        <h2>₹2.5L</h2>
+        <p>Monthly Revenue</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-users"></i>
+        <h2>850+</h2>
+        <p>Customers</p>
+    </div>
+
+</section>
+
+<!-- Notifications -->
+
+<section class="table-section">
+
+    <h2>Latest Notifications</h2>
+
+    <div class="notification-box">
+        <p><i class="fas fa-bell"></i> New ride booked from Hyderabad Airport</p>
+        <p><i class="fas fa-check-circle"></i> Ride completed successfully</p>
+        <p><i class="fas fa-gift"></i> Weekend discount offer activated</p>
+    </div>
+
+</section>
+
+<!-- Reviews -->
+
+<section class="table-section">
+
+    <h2>Customer Reviews</h2>
+
+    <div class="review-container">
+
+        <div class="review-card">
+
+            <h3>Rahul</h3>
+            <p>Excellent service and clean vehicles.</p>
+            <span>★★★★★</span>
+        </div>
+
+        <div class="review-card">
+            <h3>Priya</h3>
+            <p>Affordable pricing and quick pickup.</p>
+            <span>★★★★★</span>
+        </div>
+
+        <div class="review-card">
+            <h3>Kiran</h3>
+            <p>Professional drivers and safe rides.</p>
+            <span>★★★★☆</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
